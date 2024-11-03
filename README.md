@@ -2,14 +2,17 @@
 
 [![Go](https://github.com/RIDOS/echo-hello/actions/workflows/go.yml/badge.svg)](https://github.com/RIDOS/echo-hello/actions/workflows/go.yml)
 
-In this project we can see service written in framework [Echo](https://echo.labstack.com/) and use [ZeroLog](https://github.com/rs/zerolog).
+This project showcases a service built using the [Echo](https://echo.labstack.com/) framework and utilizes [ZeroLog](https://github.com/rs/zerolog) for logging.
 
-How it works? Project use port `:8080` and use endpoint:
+
+## How It Works
+
+Project use port `:8080` and use endpoint:
 ```bash
 curl http://localhost:8080/status
 ```
 
-This endpoint output count days before start `2025` lear.
+This endpoint output count of days until the start of the year `2025`.
 
 Also, we can use endpoint with header like this:
 ```bash
@@ -22,9 +25,11 @@ And then we can see in server console output:
 5:47AM WRN red button user detected
 ```
 
+> This warning indicates that a user with the "admin" role accessed the endpoint.
+
 ## Getting Started
 
-### With Default
+### Running the Application Locally
 
 Clone this repo:
 ```bash
@@ -46,7 +51,7 @@ Run:
 ./echo-hello
 ```
 
-### With Docker
+### Running the Application with Docker
 
 Build your image:
 ```bash
@@ -60,4 +65,4 @@ docker run -p 8080:8080 echo-hello
 
 ## Links
 
-Project written with help [spatecon](https://github.com/spatecon) and I really thanks with this experience.
+I would like [spatecon](https://github.com/spatecon) for their instructional video and guidance, which greatly contributed to the development of this application.
